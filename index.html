@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<!-- Mobile First -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Quiero hacer este 2017</title>
+	<title>Carousel</title>
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<!-- bootstrap cdn -->
@@ -15,22 +15,41 @@
 <!-- carousel -->
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-md-offset-2 col-md-8 text-center">
 			<h1>Por ver este año: </h1>
-			</div>
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="slider">
-						<div class="uno"><img src="assets/img/1bodies.jpg" class="img-thumbnail" width="480px" height="350px"></div>
-						<div class="dos"><img src="assets/img/2rockcity.jpg" class="img-thumbnail" width="480px" height="350px"></div>
-						<div class="tres"><img src="assets/img/3circo.jpg" class="img-thumbnail" width="480px" height="350px"></div>
-						<div class="cuatro"><img src="assets/img/4andre.jpg" class="img-thumbnail" width="480px" height="350px"></div>
-						<div class="cinco"><img src="assets/img/5bon.jpg" class="img-thumbnail" width="480px" height="350px"></div>
+			</div><!-- data-ride activa el carrusel -->
+			<div id="carousel" class="carousel-slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			      <li data-target="#myCarousel" data-slide-to="3"></li>
+			      <li data-target="#myCarousel" data-slide-to="4"></li>
+			    </ol>
 
-				   </div>
-			   </div>				
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+				 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    			   <span class="glyphicon glyphicon-chevron-left"></span></a>
+				<!-- imagenes -->
+					<div class="carousel-inner">
+						<a class="carousel"><img src="assets/img/1bodies.jpg" class="img-thumbnail"></a>
+						<a class="carousel"><img src="assets/img/2rockcity.jpg" class="img-thumbnail"></a>
+						<a class="carousel"><img src="assets/img/3circo.jpg" class="img-thumbnail"></a>
+						<a class="carousel"><img src="assets/img/4andre.jpg" class="img-thumbnail"></a>
+						<a class="carousel"><img src="assets/img/5bon.jpg" class="img-thumbnail"></a>
+						
+					</div>
+				</div>
+
+			</div>
+		 </div>
+			<div class="col-lg-3 col-md-3">
+			   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                 <span class="glyphicon glyphicon-chevron-right"></span>
 			</div>
 		</div>
+
 	</div>
 	
 
